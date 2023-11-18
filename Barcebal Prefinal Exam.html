@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Interactive Prog. Technologies || Prefinal Examination</title>
+</head>
+<body>
+
+	<form method="post">
+		<h1>Check Number if Prime or Composite and Odd or Even </h1>
+		<label>Enter any number: </label>
+		<input type="text" name="userInput" id="userInput" placeholder="Please enter a number" >
+
+		<button onclick="checkUserInput()"> Check </button>
+	</form>
+
+	<script>
+		
+		function checkUserInput(){
+			
+			let CheckInput = document.getElementById('userInput').value; 
+			
+			//for checking if the inputed number is Prime or Composite 
+			
+			//alert("Inputed Number: " + CheckInput);
+			let count;
+			if (CheckInput==0 || CheckInput==1){
+				count = 1;
+			} 
+			for (let i = 2; i <= CheckInput / 2; ++i) 
+			
+			if (CheckInput % i == 0) {
+				count = 1;
+				
+				}if (count == 0){
+					alert (CheckInput + "is a Prime Number");
+				}else
+					alert(CheckInput + "is a Composite Number");
+			
+		 
+			//For Checking all Odd and Even numbers 
+		 	
+		 	
+			//for(let icr = 1; icr >= CheckInput; icr++){
+			
+			if(CheckInput & 1 == 1){
+				alert("Even numbers " + CheckInput );
+				CheckInput 
+			}else{
+				alert("Odd numbers " + CheckInput );
+			}
+
+			
+
+
+
+
+		}
+		
+		
+
+
+	</script>
+
+
+
+</body>
+</html>
